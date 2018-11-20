@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <PuntoVentaConfig>
+    <EmailDestinatario1>administrador@gmail.com</EmailDestinatario1>
+    <ImpresoraOrdenDespacho>WINDOWS</ImpresoraOrdenDespacho>
+  </PuntoVentaConfig>
+  <SQLConfig>
+    <Provider>SQLCE</Provider>
+    <Server></Server>
+    <Security></Security>
+    <DataBase>DATOS.SDF</DataBase>
+    <User></User>
+    <Password></Password>
+    <Backup>C:\HK\Respaldo.bak</Backup>
+  </SQLConfig>
+</Config>

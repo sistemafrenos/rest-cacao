@@ -1,0 +1,941 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{368A1053-689E-4313-8F43-C3F5DDAE4E85}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HK</RootNamespace>
+    <AssemblyName>Mesonero</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\HK\SISTEMA\Deploy\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>workstation2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7057E3EF7E4A1108019D190D0BB0AC8A79B5ACA1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OK Mesonero_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Mesonero.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Mesonero.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>HK.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\BasicasRestaurant.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restaurant\Administrativo_Feria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\Administrativo_Feria.Designer.cs">
+      <DependentUpon>Administrativo_Feria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\Administrativo_Restaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\Administrativo_Restaurant.Designer.cs">
+      <DependentUpon>Administrativo_Restaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmBuscarEntidadesRestaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmBuscarEntidadesRestaurant.Designer.cs">
+      <DependentUpon>FrmBuscarEntidadesRestaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_Insumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_Insumos.Designer.cs">
+      <DependentUpon>FrmTablas_Insumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_CambioDeMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_CambioDeMesa.Designer.cs">
+      <DependentUpon>FrmRestaurant_CambioDeMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_CierreDeCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_CierreDeCaja.Designer.cs">
+      <DependentUpon>FrmRestaurant_CierreDeCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_Configurar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_Configurar.Designer.cs">
+      <DependentUpon>FrmRestaurant_Configurar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_ConsultarFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_ConsultarFacturas.Designer.cs">
+      <DependentUpon>FrmRestaurant_ConsultarFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_Cotizaciones.designer.cs">
+      <DependentUpon>FrmRestaurant_Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_CotizacionesItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_CotizacionesItem.designer.cs">
+      <DependentUpon>FrmRestaurant_CotizacionesItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_EditarMesaFast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_EditarMesaFast.designer.cs">
+      <DependentUpon>FrmRestaurant_EditarMesaFast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_ItemEdicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_ItemEdicion.designer.cs">
+      <DependentUpon>FrmRestaurant_ItemEdicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_MesasAbiertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_MesasAbiertas.Designer.cs">
+      <DependentUpon>FrmRestaurant_MesasAbiertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_PedirContornos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_PedirContornos.designer.cs">
+      <DependentUpon>FrmRestaurant_PedirContornos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_PedirMesonero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_PedirMesonero.Designer.cs">
+      <DependentUpon>FrmRestaurant_PedirMesonero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_Reportes.Designer.cs">
+      <DependentUpon>FrmRestaurant_Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_SepararCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_SepararCuentas.Designer.cs">
+      <DependentUpon>FrmRestaurant_SepararCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_Vale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmRestaurant_Vale.Designer.cs">
+      <DependentUpon>FrmRestaurant_Vale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_Mesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_Mesas.Designer.cs">
+      <DependentUpon>FrmTablas_Mesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_MesasItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_MesasItem.Designer.cs">
+      <DependentUpon>FrmTablas_MesasItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_Mesoneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_Mesoneros.designer.cs">
+      <DependentUpon>FrmTablas_Mesoneros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_MesonerosItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_MesonerosItem.designer.cs">
+      <DependentUpon>FrmTablas_MesonerosItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_Platos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_Platos.Designer.cs">
+      <DependentUpon>FrmTablas_Platos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_PlatosInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_PlatosInsumos.Designer.cs">
+      <DependentUpon>FrmTablas_PlatosInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_PlatosInsumosItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_PlatosInsumosItem.Designer.cs">
+      <DependentUpon>FrmTablas_PlatosInsumosItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_PlatosItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_PlatosItem.Designer.cs">
+      <DependentUpon>FrmTablas_PlatosItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_InsumosItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\FrmTablas_InsumosItem.Designer.cs">
+      <DependentUpon>FrmTablas_InsumosItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Restaurant\Administrativo_Feria.resx">
+      <DependentUpon>Administrativo_Feria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\Administrativo_Restaurant.resx">
+      <DependentUpon>Administrativo_Restaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmBuscarEntidadesRestaurant.resx">
+      <DependentUpon>FrmBuscarEntidadesRestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_Insumos.resx">
+      <DependentUpon>FrmTablas_Insumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_CambioDeMesa.resx">
+      <DependentUpon>FrmRestaurant_CambioDeMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_CierreDeCaja.resx">
+      <DependentUpon>FrmRestaurant_CierreDeCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_Configurar.resx">
+      <DependentUpon>FrmRestaurant_Configurar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_ConsultarFacturas.resx">
+      <DependentUpon>FrmRestaurant_ConsultarFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_Cotizaciones.resx">
+      <DependentUpon>FrmRestaurant_Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_CotizacionesItem.resx">
+      <DependentUpon>FrmRestaurant_CotizacionesItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_EditarMesaFast.resx">
+      <DependentUpon>FrmRestaurant_EditarMesaFast.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_ItemEdicion.resx">
+      <DependentUpon>FrmRestaurant_ItemEdicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_MesasAbiertas.resx">
+      <DependentUpon>FrmRestaurant_MesasAbiertas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_PedirContornos.resx">
+      <DependentUpon>FrmRestaurant_PedirContornos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_PedirMesonero.resx">
+      <DependentUpon>FrmRestaurant_PedirMesonero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_Reportes.resx">
+      <DependentUpon>FrmRestaurant_Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_SepararCuentas.resx">
+      <DependentUpon>FrmRestaurant_SepararCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmRestaurant_Vale.resx">
+      <DependentUpon>FrmRestaurant_Vale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_Mesas.resx">
+      <DependentUpon>FrmTablas_Mesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_MesasItem.resx">
+      <DependentUpon>FrmTablas_MesasItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_Mesoneros.resx">
+      <DependentUpon>FrmTablas_Mesoneros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_MesonerosItem.resx">
+      <DependentUpon>FrmTablas_MesonerosItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_Platos.resx">
+      <DependentUpon>FrmTablas_Platos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_PlatosInsumos.resx">
+      <DependentUpon>FrmTablas_PlatosInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_PlatosInsumosItem.resx">
+      <DependentUpon>FrmTablas_PlatosInsumosItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_PlatosItem.resx">
+      <DependentUpon>FrmTablas_PlatosItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\FrmTablas_InsumosItem.resx">
+      <DependentUpon>FrmTablas_InsumosItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\MesasCerrada.datasource" />
+    <None Include="Properties\DataSources\Mesonero.datasource" />
+    <None Include="Properties\DataSources\Producto.datasource" />
+    <None Include="Properties\DataSources\Salon.datasource" />
+    <Content Include="pnpdll.dll" />
+    <Content Include="pnpdlltest.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Administrativo_Facturas.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Administrativo_FacturasDiarias.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Administrativo_ResumenVentaxVendedor.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Administrativo_VentasxLapso.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_ComprasxGrupo.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_ComprasxProducto.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_Departamentos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_Depositos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_InventarioDiario.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_InventarioMensual.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_InventariosProveedor.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_ListadoInventarios.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_ListadoProductos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_ListaPrecios.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_Minimos.Rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_ProductosMovimientos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_VentasxGrupo.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Almacen_VentasxProducto.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Bancos_Cheque.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Bancos_EgresosLapso.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Bancos_EstadoDeCuenta.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Bancos_MovimientosLapso.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Bancos_SaldosConsolidados.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CajaChica.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CierreCaja.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Compras.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Copia %282%29 de Administrativo_Facturas.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Copy of Ventas_Factura.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Cotizacion-Plain.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxC_CobrosRealizados.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxC_CuentasxCobrarxMovimientos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxC_CuentasxCobrarxVendedor.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxC_EstadoDeCuentaCliente.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxC_EstadoDeCuentaxVendedor.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxC_HistorialMovimientosLapso.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxC_ListadoGeneral.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxC_ListadoVencimientos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxC_ResumenCuentasxCobrar.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxP_HistorialMovimientosLapso.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxP_ListadoGeneral.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxP_ListadoVencimientos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxP_LoteParaTransferencia.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxP_LoteParaTransferenciaTotales.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxP_PagosRealizados.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\CxP_Resumen.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\EstadoDeCuentaProveedor.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\IngresosDiarios.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ListadoComisionesxVendedor.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ListadoDriversActivos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ListadoDriversInactivos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ListadoFacturasNaturalesJuridicas.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ListadoIngredientes.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ListadoSuspendidos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ListadoVendedores.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ListadoVentasxVendedor.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ListadoVentasxVendedores.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\NotaCredito.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ReciboCobro.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Reporte_Excel.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Restaurant_ConsumoxInsumo.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Restaurant_Cotizacion.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Restaurant_MesasCerradas.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Restaurant_Platos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Restaurant_PlatosIngredientes.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Restaurant_VentasxDepartamentos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Restaurant_VentasxMesoneros.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Restaurant_VentasxPlatos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Restaurant_VentasxUbicacion.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ResumenVentasTaxis.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\RetencionCH.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\RetencionDoble.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_LibroDeCompras.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_LibroDeInventarios.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_LibroDeVentas.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_LibroDeVentasDiario.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_LibroDeVentasResumido.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_RelacionRetencionesISLR.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_RelacionRetencionesIVA.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_Retencion.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_RetencionesISLRxLapso.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Seniat_RetencionISLR.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Sugerencias.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Tablas_Clientes.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Tablas_Insumos.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Tablas_MaestroDeCuentas.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Tablas_Mesas.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Tablas_Mesoneros.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Tablas_Proveedores.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Tablas_Usuarios.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Traslados.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Ventas_Cotizacion.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Ventas_Factura.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Ventas_NotaEntrega.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\VentasxDepartamento.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\VentasxProducto.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\add.png" />
+    <None Include="Resources\book_blue.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\camera.png" />
+    <None Include="Resources\cashier.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\clipboard.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\creditcards.png" />
+    <None Include="Resources\data_find.png" />
+    <None Include="Resources\data_lock.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\Dibujo.PNG" />
+    <None Include="Resources\disk_blue_error.png" />
+    <None Include="Resources\document_add.png" />
+    <None Include="Resources\document_delete.png" />
+    <None Include="Resources\document_new.png" />
+    <None Include="Resources\document_ok.png" />
+    <None Include="Resources\down_minus.png" />
+    <None Include="Resources\Entrar.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\folder_document.png" />
+    <None Include="Resources\folder_refresh.png" />
+    <None Include="Resources\gears.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\money_envelope.png" />
+    <None Include="Resources\monitor_sleep.png" />
+    <None Include="Resources\note.png" />
+    <None Include="Resources\note_add.png" />
+    <None Include="Resources\note_delete.png" />
+    <None Include="Resources\note_edit.png" />
+    <None Include="Resources\note_find.png" />
+    <None Include="Resources\note_new.png" />
+    <None Include="Resources\note_pinned.png" />
+    <None Include="Resources\note_view.png" />
+    <None Include="Resources\OK_Soluciones_icono.jpg" />
+    <None Include="Resources\presentation_chart.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\Sacar.bmp" />
+    <None Include="Resources\Salir.png" />
+    <None Include="Resources\step.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\Unlock.png" />
+    <Content Include="Layouts\Abiertas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Bancos.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\BuscarBancosCheque.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\BuscarCajaChica.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\BuscarProductos.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\BuscarProductosCompras.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\BuscarProductosVentas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\CajaChica.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Clientes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Compras.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\ComprasAbierta.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\ComprasProveedor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Cotizaciones.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\CotizacionesItem.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\CotizacionesRestaurant.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Departamentos.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Drivers.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\FacturaItem.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Facturas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\FacturasAutolavado.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Maestro Cuentas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Mesas Disponibles.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Mesas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Mesoneros.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\NotasEntregas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\NotasEntregasItem.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Platos.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Productos.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Proveedores.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\Vendedores.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tfhkaif.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TfhkaNet.dll" />
+    <Content Include="workstation2.ico" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.Config">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="Properties\DataSources\MesasAbierta.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_envelope1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documents_new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Basicas\OK Basicas\OK Basicas.csproj">
+      <Project>{0D03BB5B-1E7D-4846-B84F-1325CAF605B0}</Project>
+      <Name>OK Basicas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Basicas\OK Data\OK Data.csproj">
+      <Project>{2f2e4373-ee8b-4f96-a43d-2c719ea8af7f}</Project>
+      <Name>OK Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAccess\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

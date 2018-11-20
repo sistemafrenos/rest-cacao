@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="OK Ventas" Label="OK Ventas" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="OK Administrativo 2010" Label="OK Administrativo 2010" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="OK Paqueteria" Label="OK Paqueteria" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="ImportarDatosRestaurant" Label="ImportarDatosRestaurant" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="EntityFramework.SqlServerCompact 6.1.1" Label="EntityFramework.SqlServerCompact 6.1.1" Category="Package" />
+    <Node Id="Microsoft.SqlServer.Compact 4.0.8876.1" Label="Microsoft.SqlServer.Compact 4.0.8876.1" Category="Package" />
+    <Node Id="OK Restaurant" Label="OK Restaurant" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="ImportarDatosPuntoDeVentas" Label="ImportarDatosPuntoDeVentas" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="EntityFramework.SqlServerCompact 6.1.1" Label="EntityFramework.SqlServerCompact 6.1.1" Category="Package" />
+    <Node Id="Microsoft.SqlServer.Compact 4.0.8876.1" Label="Microsoft.SqlServer.Compact 4.0.8876.1" Category="Package" />
+    <Node Id="Ok PuntoDeVentas" Label="Ok PuntoDeVentas" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="OK Support" Label="OK Support" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="OK Basicas" Label="OK Basicas" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="OK Data" Label="OK Data" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="EntityFramework.SqlServerCompact 6.1.1" Label="EntityFramework.SqlServerCompact 6.1.1" Category="Package" />
+    <Node Id="Microsoft.SqlServer.Compact 4.0.8876.1" Label="Microsoft.SqlServer.Compact 4.0.8876.1" Category="Package" />
+  </Nodes>
+  <Links>
+    <Link Source="OK Ventas" Target="EntityFramework 6.1.1" Category="Installed Package" />
+    <Link Source="OK Administrativo 2010" Target="EntityFramework 6.1.1" Category="Installed Package" />
+    <Link Source="OK Paqueteria" Target="EntityFramework 6.1.1" Category="Installed Package" />
+    <Link Source="EntityFramework.SqlServerCompact 6.1.1" Target="Microsoft.SqlServer.Compact 4.0.8876.1" Category="Package Dependency" />
+    <Link Source="EntityFramework.SqlServerCompact 6.1.1" Target="EntityFramework 6.1.1" Category="Package Dependency" />
+    <Link Source="ImportarDatosRestaurant" Target="EntityFramework.SqlServerCompact 6.1.1" Category="Installed Package" />
+    <Link Source="OK Restaurant" Target="EntityFramework 6.1.1" Category="Installed Package" />
+    <Link Source="EntityFramework.SqlServerCompact 6.1.1" Target="Microsoft.SqlServer.Compact 4.0.8876.1" Category="Package Dependency" />
+    <Link Source="EntityFramework.SqlServerCompact 6.1.1" Target="EntityFramework 6.1.1" Category="Package Dependency" />
+    <Link Source="ImportarDatosPuntoDeVentas" Target="EntityFramework.SqlServerCompact 6.1.1" Category="Installed Package" />
+    <Link Source="Ok PuntoDeVentas" Target="EntityFramework 6.1.1" Category="Installed Package" />
+    <Link Source="OK Support" Target="EntityFramework 6.1.1" Category="Installed Package" />
+    <Link Source="OK Basicas" Target="EntityFramework 6.1.1" Category="Installed Package" />
+    <Link Source="EntityFramework.SqlServerCompact 6.1.1" Target="Microsoft.SqlServer.Compact 4.0.8876.1" Category="Package Dependency" />
+    <Link Source="EntityFramework.SqlServerCompact 6.1.1" Target="EntityFramework 6.1.1" Category="Package Dependency" />
+    <Link Source="OK Data" Target="EntityFramework.SqlServerCompact 6.1.1" Category="Installed Package" />
+  </Links>
+  <Categories>
+    <Category Id="Project" />
+    <Category Id="Package" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Package Dependency" ValueLabel="True">
+      <Condition Expression="HasCategory('Package Dependency')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>
